@@ -42,3 +42,25 @@ Both Java and Maven versions should match the selected versions and Maven should
 ```
 env
 ```
+
+## Addressing Java Version Issue
+Fix found: Curretnly Spring Initializr defaults to Java 22, updated the property to Java 17 in the `pom.xml`
+```
+	<properties>
+		<java.version>17</java.version>
+	</properties>
+```
+
+This did not fix the incompatibility issue but shows how to set Java Home and Runtimes specifically in VSCode, following lines should be added to ```.vscode/settings.json```
+```
+  "java.jdt.ls.java.home": "/Users/ockert/.sdkman/candidates/java/17.0.12-zulu",
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-17",
+      "path": "/Users/ockert/.sdkman/candidates/java/17.0.12-zulu",
+      "default": true
+    },
+  ],
+  ```
+  
