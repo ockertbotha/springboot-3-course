@@ -44,7 +44,7 @@ env
 ```
 
 ## Addressing Java Version Issue
-Fix found: Curretnly Spring Initializr defaults to Java 22, updated the property to Java 17 in the `pom.xml`
+Fix found: Currently Spring Initializr defaults to Java 22, updated the property to Java 17 in the `pom.xml`
 ```
 	<properties>
 		<java.version>17</java.version>
