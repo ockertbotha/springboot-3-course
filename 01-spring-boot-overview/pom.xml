@@ -2,18 +2,18 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
 	<parent>
-		<groupId>com.luv2code.springboot.demo</groupId>
-		<artifactId>mycoolapp</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.3.3</version>
+		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.luv2code.springboot.demo</groupId>
-	<artifactId>mycoolapp-actuator-demo</artifactId>
+	<artifactId>mycoolapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>mycoolapp-actuator-demo</name>
-	<description>Actuator Demo project for Spring Boot</description>
-
+	<packaging>pom</packaging>
+	<name>mycoolapp</name>
+	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -31,16 +31,32 @@
 		<java.version>17</java.version>
 	</properties>
 
+	<modules>
+		<module>01-spring-boot-demo</module>
+		<module>02-dev-tools-demo</module>
+		<module>03-actuator-demo</module>
+	</modules>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-	  <!-- Add support for Spring Boot Actuator -->
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>

@@ -4,7 +4,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class FunRestController {
+public class FunRestController02 {
 
   // expose "/" that returns "Hello World"
   @GetMapping("/")
@@ -23,5 +23,11 @@ public class FunRestController {
   public String getDailyFortune() {
       return "Today is your lucky day.";
   }
+
+  // expose a new endoint for "rugby"
+  @GetMapping("/rugby")
+  public String getRugby() {
+      return "Rugby rocks!";
+  } 
   
 }

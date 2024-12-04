@@ -1,0 +1,34 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "MycoolappApplication01",
+      "request": "launch",
+      "mainClass": "com.luv2code.springboot.demo.mycoolapp.MycoolappApplication01",
+      "projectName": "mycoolapp-boot-demo"
+    },
+    {
+      "type": "java",
+      "name": "MycoolappApplication03",
+      "request": "launch",
+      "mainClass": "com.luv2code.springboot.demo.mycoolapp.MycoolappApplication03"
+    },
+    {
+      "type": "java",
+      "name": "MycoolappApplication",
+      "request": "launch",
+      "mainClass": "com.luv2code.springboot.demo.mycoolapp.MycoolappApplication",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-MycoolappApplication<com.luv2code.springboot.demo-mycoolapp>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.luv2code.springboot.demo.mycoolapp.MycoolappApplication",
+      "projectName": "com.luv2code.springboot.demo-mycoolapp",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
