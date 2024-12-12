@@ -36,6 +36,7 @@
 		<module>02-dev-tools-demo</module>
 		<module>03-actuator-demo</module>
 		<module>04-actuator-security-demo</module>
+		<module>05-command-line-demo</module>
 	</modules>
 
 	<dependencies>
