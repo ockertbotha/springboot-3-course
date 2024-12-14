@@ -29,6 +29,16 @@
       "projectName": "com.luv2code.springboot.demo-mycoolapp",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-MycoolappApplication04<mycoolapp-actuator-security-demo>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.luv2code.springboot.demo.mycoolapp.MycoolappApplication04",
+      "projectName": "mycoolapp-actuator-security-demo",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }

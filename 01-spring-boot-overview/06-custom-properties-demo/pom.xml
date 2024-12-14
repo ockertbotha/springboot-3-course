@@ -9,10 +9,10 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.luv2code.springboot.demo</groupId>
-	<artifactId>mycoolapp-command-line-demo</artifactId>
+	<artifactId>mycoolapp-custom-properties-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>mycoolapp-command-line-demo</name>
-	<description>Command Line Demo project for Spring Boot</description>
+	<name>mycoolapp-custom-properties-demo</name>
+	<description>Custom Properties Demo project for Spring Boot</description>
 
 	<url/>
 	<licenses>
