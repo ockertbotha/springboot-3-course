@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MycoolappApplication07",
+      "request": "launch",
+      "mainClass": "com.luv2code.springboot.demo.mycoolapp.MycoolappApplication07",
+      "projectName": "mycoolapp-spring-boot-server-demo"
+    },
+    {
+      "type": "java",
       "name": "MycoolappApplication06",
       "request": "launch",
       "mainClass": "com.luv2code.springboot.demo.mycoolapp.MycoolappApplication06",
