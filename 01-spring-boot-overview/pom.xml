@@ -38,6 +38,7 @@
 		<module>04-actuator-security-demo</module>
 		<module>05-command-line-demo</module>
 		<module>06-custom-properties-demo</module>
+		<module>07-spring-boot-server-demo</module>
 	</modules>
 
 	<dependencies>
