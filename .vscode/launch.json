@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "MycoolappApplication06",
+      "request": "launch",
+      "mainClass": "com.luv2code.springboot.demo.mycoolapp.MycoolappApplication06",
+      "projectName": "mycoolapp-custom-properties-demo"
+    },
+    {
+      "type": "java",
       "name": "MycoolappApplication01",
       "request": "launch",
       "mainClass": "com.luv2code.springboot.demo.mycoolapp.MycoolappApplication01",
