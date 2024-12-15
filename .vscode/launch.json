@@ -2,6 +2,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SpringcoredemoApplication",
+      "request": "launch",
+      "mainClass": "com.luv2code.springcoredemo.SpringcoredemoApplication",
+      "projectName": "01-constructor-injection"
+    },
+    {
+      "type": "java",
+      "name": "SpringcoredemoApplication",
+      "request": "launch",
+      "mainClass": "com.luv2code.springcoredemo.SpringcoredemoApplication",
+      "projectName": "springcoredemo"
+    },
+    {
+      "type": "java",
       "name": "MycoolappApplication07",
       "request": "launch",
       "mainClass": "com.luv2code.springboot.demo.mycoolapp.MycoolappApplication07",
