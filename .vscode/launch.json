@@ -4,6 +4,13 @@
       "type": "java",
       "name": "SpringcoredemoApplication",
       "request": "launch",
+      "mainClass": "com.luv2code.springcoredemo03.SpringcoredemoApplication",
+      "projectName": "03-setter-injection"
+    },
+    {
+      "type": "java",
+      "name": "SpringcoredemoApplication",
+      "request": "launch",
       "mainClass": "com.luv2code.springcoredemo02.SpringcoredemoApplication",
       "projectName": "02-component-scanning"
     },

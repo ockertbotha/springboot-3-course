@@ -34,6 +34,7 @@
 	<modules>
 		<module>01-constructor-injection</module>
 		<module>02-component-scanning</module>
+		<module>03-setter-injection</module>
 	</modules>
 
 	<dependencies>
