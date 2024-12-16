@@ -1,4 +1,4 @@
-package com.luv2code.springcoredemo02;
+package com.luv2code.springcoredemo02.common;
 
 import org.springframework.stereotype.Component;
 
