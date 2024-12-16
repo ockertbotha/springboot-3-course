@@ -10,7 +10,7 @@
 	<groupId>com.luv2code</groupId>
 	<artifactId>01-constructor-injection</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springcoredemo</name>
+	<name>springcoredemo-01-constructor-injection</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>

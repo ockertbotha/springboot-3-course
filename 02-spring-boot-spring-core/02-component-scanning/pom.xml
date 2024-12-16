@@ -3,16 +3,14 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.4.0</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<groupId>com.luv2code</groupId>
+		<artifactId>springcoredemo</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.luv2code</groupId>
-	<artifactId>springcoredemo</artifactId>
+	<artifactId>02-component-scanning</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
-	<name>springcoredemo</name>
+	<name>springcoredemo-02-component-scanning</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -30,32 +28,13 @@
 	<properties>
 		<java.version>23</java.version>
 	</properties>
-
-	<modules>
-		<module>01-constructor-injection</module>
-		<module>02-component-scanning</module>
-	</modules>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
-
+	
 </project>

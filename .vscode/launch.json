@@ -4,6 +4,13 @@
       "type": "java",
       "name": "SpringcoredemoApplication",
       "request": "launch",
+      "mainClass": "com.luv2code.springcoredemo02.SpringcoredemoApplication",
+      "projectName": "02-component-scanning"
+    },
+    {
+      "type": "java",
+      "name": "SpringcoredemoApplication",
+      "request": "launch",
       "mainClass": "com.luv2code.springcoredemo.SpringcoredemoApplication",
       "projectName": "01-constructor-injection"
     },
