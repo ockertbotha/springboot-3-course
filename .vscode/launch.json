@@ -4,6 +4,13 @@
       "type": "java",
       "name": "SpringcoredemoApplication",
       "request": "launch",
+      "mainClass": "com.luv2code.springcoredemo06.SpringcoredemoApplication",
+      "projectName": "06-lazy-initialization"
+    },
+    {
+      "type": "java",
+      "name": "SpringcoredemoApplication",
+      "request": "launch",
       "mainClass": "com.luv2code.springcoredemo05.SpringcoredemoApplication",
       "projectName": "05-primary"
     },
