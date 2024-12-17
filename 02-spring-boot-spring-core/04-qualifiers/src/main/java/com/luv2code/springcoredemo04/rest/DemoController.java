@@ -1,8 +1,8 @@
-package com.luv2code.springcoredemo03.rest;
+package com.luv2code.springcoredemo04.rest;
 
 import org.springframework.web.bind.annotation.RestController;
 
-import com.luv2code.springcoredemo03.common.Coach;
+import com.luv2code.springcoredemo04.common.Coach;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

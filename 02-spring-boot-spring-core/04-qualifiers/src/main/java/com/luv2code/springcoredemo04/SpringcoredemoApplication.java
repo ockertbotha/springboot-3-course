@@ -1,4 +1,4 @@
-package com.luv2code.springcoredemo03;
+package com.luv2code.springcoredemo04;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

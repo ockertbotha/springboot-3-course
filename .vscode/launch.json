@@ -4,6 +4,13 @@
       "type": "java",
       "name": "SpringcoredemoApplication",
       "request": "launch",
+      "mainClass": "com.luv2code.springcoredemo04.SpringcoredemoApplication",
+      "projectName": "04-qualifiers"
+    },
+    {
+      "type": "java",
+      "name": "SpringcoredemoApplication",
+      "request": "launch",
       "mainClass": "com.luv2code.springcoredemo03.SpringcoredemoApplication",
       "projectName": "03-setter-injection"
     },
