@@ -8,9 +8,9 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>com.luv2code</groupId>
-	<artifactId>03-setter-injection</artifactId>
+	<artifactId>04-qualifiers</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springcoredemo-03-setter-injection</name>
+	<name>springcoredemo-04-qualifiers</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
