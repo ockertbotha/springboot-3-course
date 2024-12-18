@@ -38,6 +38,7 @@
 		<module>04-qualifiers</module>
 		<module>05-primary</module>
 		<module>06-lazy-initialization</module>
+		<module>07-bean-scopes</module>
 	</modules>
 
 	<dependencies>
