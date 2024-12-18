@@ -4,6 +4,13 @@
       "type": "java",
       "name": "SpringcoredemoApplication",
       "request": "launch",
+      "mainClass": "com.luv2code.springcoredemo07.SpringcoredemoApplication",
+      "projectName": "07-bean-scopes"
+    },
+    {
+      "type": "java",
+      "name": "SpringcoredemoApplication",
+      "request": "launch",
       "mainClass": "com.luv2code.springcoredemo06.SpringcoredemoApplication",
       "projectName": "06-lazy-initialization"
     },
