@@ -6,7 +6,6 @@ import com.luv2code.springcoredemo07.common.Coach;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RestController
