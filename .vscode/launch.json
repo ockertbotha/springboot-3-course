@@ -4,6 +4,13 @@
       "type": "java",
       "name": "SpringcoredemoApplication",
       "request": "launch",
+      "mainClass": "com.luv2code.springcoredemo08.SpringcoredemoApplication",
+      "projectName": "08-bean-lifecycle-methods"
+    },
+    {
+      "type": "java",
+      "name": "SpringcoredemoApplication",
+      "request": "launch",
       "mainClass": "com.luv2code.springcoredemo07.SpringcoredemoApplication",
       "projectName": "07-bean-scopes"
     },

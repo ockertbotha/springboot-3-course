@@ -39,6 +39,7 @@
 		<module>05-primary</module>
 		<module>06-lazy-initialization</module>
 		<module>07-bean-scopes</module>
+		<module>08-bean-lifecycle-methods</module>
 	</modules>
 
 	<dependencies>
