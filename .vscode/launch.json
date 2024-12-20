@@ -4,6 +4,13 @@
       "type": "java",
       "name": "SpringcoredemoApplication",
       "request": "launch",
+      "mainClass": "com.luv2code.springcoredemo09.SpringcoredemoApplication",
+      "projectName": "09-java-config-bean"
+    },
+    {
+      "type": "java",
+      "name": "SpringcoredemoApplication",
+      "request": "launch",
       "mainClass": "com.luv2code.springcoredemo08.SpringcoredemoApplication",
       "projectName": "08-bean-lifecycle-methods"
     },

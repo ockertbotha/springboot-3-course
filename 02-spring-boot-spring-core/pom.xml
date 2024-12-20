@@ -40,6 +40,7 @@
 		<module>06-lazy-initialization</module>
 		<module>07-bean-scopes</module>
 		<module>08-bean-lifecycle-methods</module>
+		<module>09-java-config-bean</module>
 	</modules>
 
 	<dependencies>
