@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  mariadb:
+    image: mariadb:10.4
+    container_name: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: student_tracker
+      MYSQL_USER: springstudent
+      MYSQL_PASSWORD: springstudent
+    ports:
+      - 3306:3306
+    volumes:
+      - ./starter-sql-scripts/02-student-tracker.sql:/docker-entrypoint-initdb.d/02-student-tracker.sql
