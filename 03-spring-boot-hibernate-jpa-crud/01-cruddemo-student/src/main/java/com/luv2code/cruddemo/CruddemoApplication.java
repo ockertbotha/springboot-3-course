@@ -28,12 +28,13 @@ public class CruddemoApplication {
 
 			// queryForStudents(studentDAO);
 
-			queryForStudentsByLastName(studentDAO);
+			// queryForStudentsByLastName(studentDAO);
+
+			updateStudent(studentDAO);
 		};
 	}
 
 	private void createStudent(StudentDAO studentDAO) {
-		
 		//create a student object
 		System.out.println("Creating a new student object...");
 		Student tempoStudent = new Student("Daffy", "Duck", "daffy.duck@warnerbros.com");
@@ -61,7 +62,6 @@ public class CruddemoApplication {
 	}
 
 	private void readStudent(StudentDAO studentDAO) {
-		
 		//create a student object
 		Student tempStudent = new Student("Bugs", "Bunny", "bugs.bunny@warnerbros.com"); 
 
@@ -82,7 +82,6 @@ public class CruddemoApplication {
 	}
 
 	private void queryForStudents(StudentDAO studentDAO) {
-		
 		// get a list of students
 		List<Student> theStudents = studentDAO.findAll();
 
@@ -92,8 +91,7 @@ public class CruddemoApplication {
 		}
 	}
 
-	private void queryForStudentsByLastName(StudentDAO studentDAO) {
-		
+	private void queryForStudentsByLastName(StudentDAO studentDAO) {	
 		// get a list of students
 		List<Student> theStudents = studentDAO.findByLastName("Bunny");
 
@@ -101,5 +99,22 @@ public class CruddemoApplication {
 		for (Student tempStudent : theStudents) {
 			System.out.println(tempStudent);
 		}
+	}
+
+	private void updateStudent(StudentDAO studentDAO) {
+		// retrieve the student based on the id: primary key
+		int studentId = 1;
+		System.out.println("Getting student with id: " + studentId);
+		Student theStudent = studentDAO.findById(studentId);
+		
+		// change the first name to Scooby
+		System.out.println("Updating student...");
+		theStudent.setFirstName("Buggs");
+
+		// update the student
+		studentDAO.update(theStudent);
+
+		// display the updated student
+		System.out.println("Updated student: " + theStudent);
 	}
 }
