@@ -1,11 +1,15 @@
 package com.luv2code.cruddemo.dao;
 
+import java.lang.reflect.Type;
+import java.util.List;
+
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.luv2code.cruddemo.entity.Student;
 
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.TypedQuery;
 
 @Repository
 public class StudentDAOImpl implements StudentDAO {
@@ -29,6 +33,17 @@ public class StudentDAOImpl implements StudentDAO {
   @Override
   public Student findById(int id) {
     return entityManager.find(Student.class, id);
+  }
+
+  // implement the findAll method
+  @Override
+  public List<Student> findAll() {
+
+    //create a query
+    TypedQuery<Student> theQuery = entityManager.createQuery("FROM Student ORDER BY lastName", Student.class);
+
+    //return the results
+    return theQuery.getResultList();
   }
 
 }
