@@ -2,6 +2,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CruddemoApplication",
+      "request": "launch",
+      "mainClass": "com.luv2code.cruddemo.CruddemoApplication",
+      "projectName": "cruddemo"
+    },
+    {
+      "type": "java",
       "name": "SpringcoredemoApplication",
       "request": "launch",
       "mainClass": "com.luv2code.springcoredemo09.SpringcoredemoApplication",
