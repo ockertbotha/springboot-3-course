@@ -1,6 +1,5 @@
 package com.luv2code.cruddemo.dao;
 
-import java.lang.reflect.Type;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
