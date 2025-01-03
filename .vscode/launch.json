@@ -2,6 +2,12 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CruddemoApplication",
+      "request": "launch",
+      "mainClass": "com.luv2code.springboot.cruddemo.CruddemoApplication"
+    },
+    {
+      "type": "java",
       "name": "RestdemoApplication",
       "request": "launch",
       "mainClass": "com.luv2code.restdemo.RestdemoApplication",
