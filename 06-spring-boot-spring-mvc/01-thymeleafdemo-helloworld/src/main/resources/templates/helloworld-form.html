@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <title>
+    Hello World - Input Form  
+  </title>
+  
+  <!-- reference CSS file -->
+   <link rel="stylesheet" 
+        type="text/css" 
+        th:href="@{/css/demo.css}" />
+</head>
+<body>
+  <h1>Hello World - Input Form</h1>
+  <form th:action="@{/processForm}" method="GET">
+    
+    <label for="studentName">Name:</label>
+    <input type="text" id="name" name="studentName" placeholder="What's your name?"/>
+    
+    <input type="submit" value="Submit" />
+  </form>
+</body>
+</html>
