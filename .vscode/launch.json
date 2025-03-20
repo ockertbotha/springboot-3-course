@@ -2,6 +2,19 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ValidationdemoApplication",
+      "request": "launch",
+      "mainClass": "com.luv2code.springdemo.mvc.ValidationdemoApplication",
+      "projectName": "com.luv2code.springdemo.mvc-validationdemo"
+    },
+    {
+      "type": "java",
+      "name": "ValidationdemoApplication",
+      "request": "launch",
+      "mainClass": "com.luv2code.springdemo.mvc.validationdemo.ValidationdemoApplication"
+    },
+    {
+      "type": "java",
       "name": "ThymeleafdemoApplication",
       "request": "launch",
       "mainClass": "com.luv2code.springboot.thymeleafdemo.ThymeleafdemoApplication",
