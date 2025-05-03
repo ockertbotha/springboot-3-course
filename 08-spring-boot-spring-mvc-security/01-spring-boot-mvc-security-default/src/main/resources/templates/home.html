@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
   <head>
     <meta charset="UTF-8" />
     <title>luv2code Company Home Page</title>
@@ -13,5 +13,10 @@
   <p>We are a company that specializes in providing top-notch services to our clients.</p>
   <p>Our mission is to deliver quality and excellence in everything we do.</p>
   <p>Thank you for visiting our home page!</p>
+
+  <!-- Add a logout button -->
+  <form action="#" th:action="@{/logout}" method="POST">
+    <input type="submit" value="Logout" />
+  </form>
 </body>
 </html>
