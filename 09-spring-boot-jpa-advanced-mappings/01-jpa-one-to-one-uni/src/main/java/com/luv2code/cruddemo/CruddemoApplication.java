@@ -5,6 +5,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+import com.luv2code.cruddemo.dao.AppDAO;
+import com.luv2code.cruddemo.entity.Instructor;
+import com.luv2code.cruddemo.entity.InstructorDetail;
+
 @SpringBootApplication
 public class CruddemoApplication {
 
@@ -13,9 +17,42 @@ public class CruddemoApplication {
 	}
 
 	@Bean
-	public CommandLineRunner commandLineRunner(String[] args) {
+	public CommandLineRunner commandLineRunner(AppDAO appDAO) {
 		return runner -> {
-			System.out.println("Hello, World!");
+				createInstructor(appDAO);
 		};
+	}
+
+	private void createInstructor(AppDAO appDAO) {
+		
+		/* 
+		// create the instructor
+		Instructor tempInstructor = 
+			new Instructor("John", "Doe", "john.doe@somewhere.com");
+
+		// create the instructor detail 
+		InstructorDetail tempInstructorDetail = 
+			new InstructorDetail("http://www.luv2code.com/youtube", "Luv 2 code!!");
+		*/
+
+				// create the instructor
+		Instructor tempInstructor = 
+			new Instructor("Madhus", "Patels", "madhus@luv2code.com");
+
+		// create the instructor detail 
+		InstructorDetail tempInstructorDetail = 
+			new InstructorDetail("http://www.luv2code.com/youtube", "Guitar");
+
+		//associate the objects
+		tempInstructor.setInstructorDetail(tempInstructorDetail);
+
+		// save the instructor
+		// NOTE: this will also save the details object
+		// because of CascadeType.ALL
+		System.out.println("Saving instructor: " + tempInstructor);
+		appDAO.save(tempInstructor);
+		System.out.println("Saved instructor: " + tempInstructor);
+		System.out.println("Saved instructor detail: " + tempInstructorDetail);
+		System.out.println("Done!");
 	}
 }
