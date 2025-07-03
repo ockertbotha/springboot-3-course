@@ -19,7 +19,7 @@ public class CruddemoApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(AppDAO appDAO) {
 		return runner -> {
-				//createInstructor(appDAO);
+				// createInstructor(appDAO);
 				
 				//findInstructor(appDAO);
 
@@ -33,7 +33,7 @@ public class CruddemoApplication {
 
 	private void deleteInstructorDetail(AppDAO appDAO) {
 		// delete the instructor detail with id 3
-		int theId = 7;
+		int theId = 8;
 		System.out.println("Deleting instructor detail with id: " + theId);
 		
 		appDAO.deleteInstructorDetailById(theId);
