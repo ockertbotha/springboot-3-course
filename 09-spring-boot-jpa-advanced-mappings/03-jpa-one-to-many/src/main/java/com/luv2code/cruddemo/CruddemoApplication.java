@@ -36,8 +36,55 @@ public class CruddemoApplication {
 
 				// findCoursesForInstructor(appDAO);
 
-				findInstructorWithCoursesJoinFetch(appDAO);
+				// findInstructorWithCoursesJoinFetch(appDAO);
+
+				// updateInstructor(appDAO);
+
+				// updateCourse(appDAO);
+
+				deleteCourse(appDAO);
 		};
+	}
+
+	private void deleteCourse(AppDAO appDAO) {
+		// delete the course
+		int theId = 13;
+		System.out.println("Deleting course with id: " + theId);
+		
+		appDAO.deleteCourseById(theId);
+		
+		System.out.println("Done!");
+	}
+
+	private void updateCourse(AppDAO appDAO) {
+		// find the course by id
+		int theId = 12;
+		System.out.println("Finding course with id: " + theId);
+		Course tempCourse = appDAO.findCourseById(theId);
+		
+		// update the course
+		System.out.println("Updating course: " + tempCourse);
+		tempCourse.setTitle("Advanced Racing Techniques");
+		appDAO.update(tempCourse);
+
+		System.out.println("Updated course: " + tempCourse);
+		System.out.println("Done!");
+	}
+
+	private void updateInstructor(AppDAO appDAO) {
+		
+		// find the instructor by id
+		int theId = 1;
+		System.out.println("Finding instructor with id: " + theId);
+		Instructor tempInstructor = appDAO.findInstructorById(theId);
+		System.out.println("Updating instructor: " + tempInstructor);
+		
+		// update the instructor
+		tempInstructor.setLastName("TESTER");
+		appDAO.update(tempInstructor);
+
+		System.out.println("Updated instructor: " + tempInstructor);
+		System.out.println("Done!");
 	}
 
 	private void findInstructorWithCoursesJoinFetch(AppDAO appDAO) {
