@@ -87,4 +87,24 @@ public class AppDAOImpl implements AppDAO {
 
         return courses;
     }
+
+    @Override
+    // @Transactional(readOnly = true)
+    public Instructor findInstructorByIdJoinFetch(int theId) {
+        
+        // create query to get instructor with courses using JOIN FETCH
+        TypedQuery<Instructor> query = entityManager.createQuery(
+                            "SELECT i FROM Instructor i "
+                            + "JOIN FETCH i.courses "
+                            + "JOIN FETCH i.instructorDetail "
+                            + "WHERE i.id = :instructorId", Instructor.class);
+        
+        query.setParameter("instructorId", theId);  
+        
+        // execute query and get the result
+        Instructor tempInstructor = query.getSingleResult();
+        
+        // return the instructor
+        return tempInstructor;  
+    }
 }
